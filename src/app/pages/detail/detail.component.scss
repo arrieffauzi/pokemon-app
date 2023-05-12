@@ -1,0 +1,40 @@
+.page {
+  background-color: purple;
+
+  ul{
+    margin: 0;
+  }
+
+  .content {
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .image-container {
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    .detail-container {
+      width: 100%;
+      margin-top: 30px;
+      padding-left: 30px;
+
+      .item{
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+
+      .move-container{
+        overflow-y: auto;
+        height: 150px;
+      }
+    }
+  }
+}

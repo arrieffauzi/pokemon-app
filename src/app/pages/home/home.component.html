@@ -1,0 +1,22 @@
+<div class="page">
+  <page-header title="Pokemon App - Arief Fauzi"></page-header>
+  <div class="content">
+    <div class="list-container">
+      <div class="card-list" *ngFor="let item of dataSource" (click)="goToDetail(item.name)">
+        <span>{{ item.name }}</span>
+      </div>
+    </div>
+
+    <mat-paginator #paginator
+      (page)="handlePageEvent($event)"
+      [length]="dataLength"
+      [pageSize]="pageSize"
+      [disabled]="disabled"
+      [showFirstLastButtons]="true"
+      [pageIndex]="pageIndex"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.page {
+  background-color: purple;
+
+  .content {
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .list-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      overflow-y: scroll;
+      width: 50%;
+      height: 450px;
+
+      .card-list {
+        padding: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 50%;
+      }
+    }
+  }
+}
